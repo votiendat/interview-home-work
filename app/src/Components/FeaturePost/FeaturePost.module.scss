@@ -13,7 +13,6 @@
         position: relative;
         width: 50%;
         padding-bottom: 40%;
-        border-radius: 10px;
 
         .card-img {
           width: 100%;
@@ -22,6 +21,7 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+          border-radius: 10px;
         }
       }
 
@@ -29,6 +29,12 @@
         width: 50%;
         padding: initial;
         padding-left: 1.5rem;
+
+        .post-title {
+          a {
+            text-decoration: none !important;
+          }
+        }
       }
     }
 
@@ -40,14 +46,29 @@
       .post-small {
         border: initial;
 
+        &:nth-child(2) {
+          margin: 1.25rem auto;
+        }
+
         .card-img {
+          display: block;
           width: 36%;
-          border-radius: 10px;
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
         }
 
         .card-body {
           padding: initial;
           padding-left: 1.5rem;
+
+          .post-title {
+            a {
+              text-decoration: none !important;
+            }
+          }
         }
       }
     }
