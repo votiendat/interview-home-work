@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
+import PostDetails from "../../Components/PostDetails/PostDetails";
 
 class Details extends Component {
   render() {
@@ -11,6 +12,7 @@ class Details extends Component {
           backgroundImage="https://images.unsplash.com/photo-1511424443513-a00662140eeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2549&q=80"
         />
 
+        <PostDetails />
       </div>
     );
   }

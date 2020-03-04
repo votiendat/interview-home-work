@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Posts extends Component {
   constructor(props) {
@@ -22,17 +23,19 @@ class Posts extends Component {
           </div>
         </div>
 
+        <div className="row mb-3">
+          <div className="col">
+            <p className="text-primary"><strong>LATEST</strong></p>
+            <h1><strong>News and Tutorials</strong></h1>
+          </div>
+        </div>
+
         <div className="row posts-container flex-column">
           <div className="col post mb-4">
             <div className="card d-flex align-items-center flex-row bg-white p-4">
-              <div className="card-img-box">
-                <div
-                  className="card-img"
-                  style={{
-                    backgroundImage: `url(${require("../../assets/images/post-feature-image-1.jpg")})`
-                  }}
-                ></div>
-              </div>
+              <Link className="card-img-box" to="/details">
+                <div className="card-img" style={{backgroundImage: `url(${require("../../assets/images/post-feature-image-1.jpg")})`}}></div>
+              </Link>
               <div className="card-body">
                 <p className="post-category text-warning mb-0">
                   <strong>UI/UX</strong>

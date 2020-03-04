@@ -1,0 +1,87 @@
+$colors: (
+  facebook: #3b5998,
+  twitter: #00aced,
+  linkedin: #007bb6
+);
+
+.post-details {
+  position: relative;
+  z-index: 9;
+  margin-top: -240px;
+
+  .post-actions {
+    .social {
+      margin: 20px 0;
+      text-align: center;
+      &__item {
+        display: inline-block;
+        margin: 7px;
+      }
+      .fa {
+        background: #fff;
+        border-radius: 35px;
+        color: #818181;
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+        height: 45px;
+        line-height: 45px;
+        position: relative;
+        text-align: center;
+        transition: all 0.2s;
+        width: 45px;
+        &:after {
+          color: #818181;
+          content: attr(data-count);
+          font-size: 14px;
+          left: 0;
+          line-height: 20px;
+          position: absolute;
+          text-align: center;
+          top: 100%;
+          width: 100%;
+        }
+      }
+      @each $key, $color in $colors {
+        .fa-#{$key}:hover {
+          box-shadow: 0 0 15px rgba($color, 0.5) inset;
+          color: $color;
+        }
+      }
+    }
+  }
+
+  .post-details-content {
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 10px 25px 1px #dedede;
+    padding-left: 7.5rem !important;
+    padding-right: 7.5rem !important;
+  }
+
+  .post-relative {
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    //   background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+}
