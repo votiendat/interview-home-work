@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  z-index: 9;
+
+  header {
+    .masthead-brand {
+      float: left;
+    }
+
+    .nav-masthead {
+      float: right;
+    }
+  }
+}
