@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import FeaturePost from "../../Components/FeaturePost/FeaturePost";
+import Posts from "../../Components/Posts/Posts";
 
 class Home extends Component {
   render() {
-    return <div>HOME PAGE</div>;
+    return (
+      <div className="home">
+        <FeaturePost />
+        <Posts />
+      </div>
+    );
   }
 }
 
