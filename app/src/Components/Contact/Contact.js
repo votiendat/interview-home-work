@@ -140,90 +140,85 @@ class Contact extends Component {
 
         <div className="row post-details-content bg-white p-5">
           <div className="col">
-            <h1 className="text-center mb-4">Lorem ipsum dolor sit amet</h1>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit minima ea amet. Perferendis alias, pariatur, vitae
-                illum magnam sequi deserunt esse, eligendi aliquam quo
-                laboriosam at? Delectus mollitia blanditiis nobis. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Suscipit minima ea
-                amet. Perferendis alias, pariatur, vitae illum magnam sequi
-                deserunt esse, eligendi aliquam quo laboriosam at? Delectus
-                mollitia blanditiis nobis.
-              </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.22290860918!2d106.67806595126125!3d10.79423226177659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d4473e7265%3A0x52eb570d5342e7e9!2sZigvy%20Headquarter!5e0!3m2!1sen!2s!4v1583369806935!5m2!1sen!2s"
+              width="100%"
+              height="450"
+              frameborder="0"
+              allowfullscreen=""
+              title="map"
+            ></iframe>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit minima ea amet. Perferendis alias, pariatur, vitae
-                illum magnam sequi deserunt esse, eligendi aliquam quo
-                laboriosam at? Delectus mollitia blanditiis nobis. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Suscipit minima ea
-                amet. Perferendis alias, pariatur, vitae illum magnam sequi
-                deserunt esse, eligendi aliquam quo laboriosam at? Delectus
-                mollitia blanditiis nobis.
-              </p>
+            <h1 className="text-center mt-4 mb-4">
+              Lorem ipsum dolor sit amet
+            </h1>
 
-              <p>
-                <img
-                  src={require("../../assets/images/about-1.jpg")}
-                  className="img-fluid"
-                  alt="post-img"
+            <form>
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="inputEmail4"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="inputName"
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label for="inputAddress">Address</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
                 />
-                <small>
-                  <em>
-                    UI/UX consectetur adipisicing elit eligendi aliquam quo
-                    laboriosam at? Delectus mollitia blanditiis nobis.
-                  </em>
-                </small>
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit minima ea amet. Perferendis alias, pariatur, vitae
-                illum magnam sequi deserunt esse, eligendi aliquam quo
-                laboriosam at? Delectus mollitia blanditiis nobis. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Suscipit minima ea
-                amet. Perferendis alias, pariatur, vitae illum magnam sequi
-                deserunt esse.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit minima ea amet. Perferendis alias, pariatur, vitae
-                illum magnam sequi deserunt esse, eligendi aliquam quo
-                laboriosam at? Delectus mollitia blanditiis nobis. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Suscipit minima ea
-                amet. Perferendis alias, pariatur, vitae illum magnam sequi
-                deserunt esse, eligendi aliquam quo laboriosam at? Delectus
-                mollitia blanditiis nobis.
-              </p>
-
-              <p>
-                <img
-                  src={require("../../assets/images/about-2.jpg")}
-                  className="img-fluid"
-                  alt="post-img"
-                />
-                <small>
-                  <em>
-                    UI/UX consectetur adipisicing elit eligendi aliquam quo
-                    laboriosam at? Delectus mollitia blanditiis nobis.
-                  </em>
-                </small>
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Suscipit minima ea amet. Perferendis alias, pariatur, vitae
-                illum magnam sequi deserunt esse, eligendi aliquam quo
-                laboriosam at? Delectus mollitia blanditiis nobis. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Suscipit minima ea
-                amet. Perferendis alias, pariatur, vitae illum magnam sequi
-                deserunt esse, eligendi aliquam quo laboriosam at? Delectus
-                mollitia blanditiis nobis.
-              </p>
-            </div>
+              </div>
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" className="form-control" id="inputCity" />
+                </div>
+                <div className="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" className="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div className="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" className="form-control" id="inputZip" />
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label className="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-warning w-100 text-light"
+              >
+                SIGN IN
+              </button>
+            </form>
           </div>
         </div>
       </div>
