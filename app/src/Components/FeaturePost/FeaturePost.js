@@ -11,7 +11,7 @@ class FeaturePost extends Component {
     return (
       <div className="container feature-post">
         <div className="row">
-          <div className="col-8 feature-large feature-box">
+          <div className="col-12 col-lg-8 feature-large feature-box">
             <div className="post card d-flex align-items-center flex-row bg-white p-4">
               <Link className="card-img-box" to="/details">
                 <div

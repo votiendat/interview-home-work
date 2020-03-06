@@ -20,7 +20,7 @@ class PageHeader extends Component {
         >
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-8 ml-auto mr-auto text-center text-light">
+              <div className="col-12 col-lg-8 ml-auto mr-auto text-center text-light">
                 <h1 className="title mb-4">{this.props.title}</h1>
                 <p className="container sub-title">{this.props.subTitle}</p>
               </div>

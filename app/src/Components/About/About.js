@@ -106,7 +106,7 @@ class About extends Component {
       <div className="post-details container">
         <div className="row post-actions">
           <div className="col d-flex flex-row align-items-center justify-content-between">
-            <Link classaName="post-back" to="/">
+            <Link className="post-back" to="/">
               <h5 className="text-light">
                 <i className="fa fa-angle-left" aria-hidden="true"></i> Back
               </h5>

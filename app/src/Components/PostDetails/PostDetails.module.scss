@@ -9,6 +9,10 @@ $colors: (
   z-index: 9;
   margin-top: -240px;
 
+  @media (max-width: 575.98px) {
+    width: 92% !important;
+  }
+
   .post-actions {
     .social {
       margin: 20px 0;
@@ -57,6 +61,16 @@ $colors: (
     box-shadow: 0 10px 25px 1px #dedede;
     padding-left: 7.5rem !important;
     padding-right: 7.5rem !important;
+
+    @media (max-width: 991.98px) {
+      padding-left: 3.5rem !important;
+      padding-right: 3.5rem !important;
+    }
+
+    @media (max-width: 575.98px) {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
   }
 
   .post-relative {
@@ -67,7 +81,7 @@ $colors: (
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-    //   background: #fff;
+      //   background: #fff;
 
       /* Center slide text vertically */
       display: -webkit-box;

@@ -8,7 +8,7 @@ class About extends Component {
       <div className="about">
         <PageHeader
           title="About Us"
-          subTitle="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore."
+          subTitle="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squi, nihil anim."
           backgroundImage="https://zigvy.com/wp-content/uploads/2019/07/18192550_1286826404765545_6819697274981970225_o.jpg"
         />
 
